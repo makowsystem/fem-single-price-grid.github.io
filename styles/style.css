@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(204deg, 43%, 93%);
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0, 0, 0, 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  widows: 1px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 670px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 2rem;
+}
+.grid__community {
+  display: grid;
+  gap: 1rem;
+  background-color: white;
+  padding: 2.8rem;
+}
+.grid__community h2 {
+  color: hsl(179deg, 62%, 43%);
+}
+.grid__community h3 {
+  color: hsl(71deg, 73%, 54%);
+}
+.grid__community p {
+  color: hsl(218deg, 22%, 67%);
+}
+.grid__subscription {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grid__subscription .monthly-subs {
+  display: grid;
+  background-color: hsl(179deg, 55%, 45%);
+  padding: 2.8rem;
+  color: white;
+}
+.grid__subscription .monthly-subs .subs {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.grid__subscription .monthly-subs .subs p {
+  color: hsl(206deg, 13%, 78%);
+}
+.grid__subscription .monthly-subs p {
+  color: hsl(207deg, 82%, 96%);
+}
+.grid__subscription .monthly-subs a {
+  border: none;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  background-color: hsl(71deg, 73%, 54%);
+  color: white;
+  display: block;
+  margin-top: 1rem;
+  padding: 0.8rem 0 0.2rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+}
+.grid__subscription .why-us {
+  display: grid;
+  gap: 1rem;
+  background-color: hsl(179deg, 55%, 50%);
+  color: white;
+  padding: 2.8rem;
+}
+.grid__subscription .why-us ul {
+  list-style-type: none;
+  color: hsl(204deg, 43%, 93%);
+}
+
+@media (max-width: 375px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .grid__community {
+    padding: 1.5rem;
+  }
+  .grid__subscription {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .grid__subscription .monthly-subs,
+.grid__subscription .why-us {
+    gap: 0.5rem;
+    padding: 1.5rem;
+  }
+  .grid__subscription .monthly-subs a {
+    padding: 0.6rem 0 0.6rem;
+  }
+}/*# sourceMappingURL=style.css.map */
